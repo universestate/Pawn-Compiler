@@ -1,0 +1,53 @@
+:: Copyright (C) Microsoft Corporation. All rights reserved.
+:: 
+:: This script is proprietary information of Microsoft Corporation.
+:: Unauthorized use, duplication, or distribution is prohibited.
+:: 
+:: Description: This script was created by (S) Urnamed. and free to project.
+
+@echo off
+
+set PAWNO_PATH=pawno\pawncc.exe
+set OUTPUT_PATH=gamemodes
+
+:compile
+if not exist "%PAWNO_PATH%" (
+    echo -- pawncc.exe not found in the pawno folder!
+    pause
+    exit /b
+)
+
+if not exist "%OUTPUT_PATH%" (
+    echo -- gamemodes folder not found, creating folder...
+    mkdir "%OUTPUT_PATH%"
+)
+
+for %%f in (gamemodes\*.pwn gamemodes\*.p) do (
+    echo -- Compiling %%f...
+    "%PAWNO_PATH%" %%f -o"%OUTPUT_PATH%\%%~nf.amx"
+    
+    if exist "%OUTPUT_PATH%\%%~nf.amx" (
+        echo -- %%~nf.amx compiled successfully.
+    ) else (
+        echo -- Error: Failed to compile %%f.
+        pause
+    )
+)
+
+echo -- Compilation completed.
+echo -- Type 'return' to compile again or type 'exit' to end.
+:input
+set /p input=-- Enter choice: $
+
+if /i "%input%" == "return" (
+    goto compile
+) else if /i "%input%" == "exit" (
+    goto exit
+) else (
+    echo -- Invalid input, please type 'return' to compile again or 'exit' to end.
+    goto input
+)
+
+:exit
+pause
+exit

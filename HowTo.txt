@@ -1,0 +1,17 @@
+[ID]:
+
+(I) Pertama, ekstrak file .zip yang berisi file ".bat" dan empat file utama. Seperti Compiler untuk FilterScript (FS) ("compilerFS.bat") dan GameMode (GM) ("compilerGM.bat"), kamu bebas memilih mana yang ingin dipasang.
+(S) Untuk source-nya, kamu bisa membuka file "sourceFS.txt" untuk Source Code Auto Compiler FS dan "sourceGM.txt" untuk Source Code Auto Compiler GM.
+(C) Misalnya kamu ingin memasang kedua file utama tersebut, maka kamu bisa memasangnya di luar folder-folder lain atau di dalam folder pawno secara langsung. Pastikan folder tersebut memiliki file "pawncc.exe" dari folder "pawno" pada direktori gamemodemu.
+(R) Untuk memulai menjalankannya, kamu bisa mengklik dua kali pada file ".bat" yang sudah dipasang pada direktori gamemodemu.
+(I) Auto Compiler ini benar-benar bisa untuk "AUTO", artinya semua file berbentuk Pawn Code (".pwn") dan (".p") akan otomatis terkompilasi jika file Compiler tersebut dijalankan. (I) Auto Compiler ini dibuat murni oleh individu dan dengan sedikit bantuan source dari Microsoft Corporation.
+(I) Meskipun fungsi proyek ini simpel dan tidak ada yang istimewa, proyek ini cukup berguna bagi mereka yang malas melakukan kompilasi satu per satu menggunakan software Pawn Code-nya.
+
+[EN]:
+
+(I) First, extract the .zip file containing the ".bat" file and four main files. Such as Compiler for FilterScript (FS) ("compilerFS.bat") and GameMode (GM) ("compilerGM.bat"), you are free to choose which one to install.
+(S) For the source, you can open the "sourceFS.txt" file for the Source Code Auto Compiler FS and "sourceGM.txt" for the Source Code Auto Compiler GM.
+(C) For example, if you want to install both main files, you can place them outside other folders or directly in the pawno folder. Make sure that folder contains the "pawncc.exe" file from the "pawno" folder in your game mode directory.
+(R) To start running it, you can double-click on the ".bat" file that has been placed in your game mode directory.
+(I) This Auto Compiler truly works "AUTO", meaning all files in the form of Pawn Code (".pwn") and (".p") will automatically be compiled if the Compiler file is run. (I) This Auto Compiler is purely made by an individual with a little source help from Microsoft Corporation.
+(I) Although the function of this project is simple and not very special, it is quite useful for those who are too lazy to manually compile from the Pawn Code software and too lazy to compile one by one.
